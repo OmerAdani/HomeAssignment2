@@ -1,0 +1,300 @@
+*{
+   
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    width: 100%;
+    height: 20%;
+    background-color:lightsteelblue;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+
+  header {
+    top: 0;
+    position: sticky;
+  }
+  .current{
+    border: #333 solid 2px;
+    display: flex;
+    width: auto;
+    border-radius: 20px;
+  }
+  
+  nav {
+    background-color:rgb(97, 110, 168);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    
+    top: 0;
+  }
+  
+  nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+  
+  }
+  
+  nav li {
+    height: 50px;
+  }
+  
+  nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: background-color 0.5s;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(64, 63, 63);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10 px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .sidebar li {
+    width: 100%;
+  }
+  
+  .sidebar a {
+    width: 100%;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+
+.content h1{
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image{
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: 10%;
+    
+
+}
+
+.image img {
+   
+  width: 100%;
+  border-radius: 3%;
+}
+
+.content p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 500px;
+    text-align: left;
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 5%;
+    
+}
+
+
+.btn-box{
+
+   height: 50px;
+   justify-content: flex-start; 
+   align-items: center;
+   margin-top: 5%;
+   margin-left: 35%;
+   
+    
+}
+
+.banner{
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.btn-box a{
+    width: 150px;
+    height: 100%;
+    background-color: rgb(127, 142, 255);
+    border: 2px solid rgb(127, 142, 255);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29; 
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+      
+    
+} 
+
+.btn-box a:hover {
+    background-color: #36D7B7; 
+    border-color: #36D7B7;
+    color: white; 
+}
+
+#Contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+footer {
+    
+    bottom: 0; 
+    width: 100%; 
+    background-color: #333; 
+    color: #fff;
+    padding: 20px;
+    text-align: center; 
+}
+
+@media (max-width: 700px) {
+
+    html,
+    body {
+      width: 100vw;
+    }
+  
+    header {
+      width: 110%;
+    }
+  
+    .hideonmobile {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+
+    .content h1{
+        font-size: 15px;
+        width: 90%;
+    }
+    .current{
+        border: none;
+    }
+
+    .content p{
+        font-size: 8.5px;
+        padding: 8%;
+    }
+
+    .image img{
+        margin-left: 30%;
+    }
+
+    .btn-box a{
+        width: 50%;
+        height: 50%;
+        font-size: 8px;
+    }
+
+    #Contact{
+        padding:5px;
+        width: 80%;
+    }
+
+    .contact-info {
+        max-width:150px;
+        margin: 0 auto;
+    }
+
+   .contact-info h2{
+    font-size: 10px;
+   }
+
+   .contact-info p {
+    font-size: 8px;
+}
+
+   .footer {
+    font-size: 10px;
+    padding: 10px;
+    width: 105%;
+    
+   }
+
+  
+    
+  }
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
